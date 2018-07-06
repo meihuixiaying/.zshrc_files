@@ -97,3 +97,11 @@ source /Users/wiggens/.gvm/scripts/gvm
 alias proxy='export all_proxy=socks5://127.0.0.1:1080'
 alias unproxy='unset all_proxy'
 export GOPATH="/Users/wiggens/go"
+export PATH=$PATH:$GOPATH/bin
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    exportWORKON_HOME=$HOME/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+lias proxy='export all_proxy=socks5://127.0.0.1:1080'
+alias unproxy='unset all_proxy'
